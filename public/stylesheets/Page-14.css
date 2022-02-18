@@ -1,0 +1,71 @@
+ .u-section-1 {
+  background-image: none;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 867px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 233px;
+  height: 233px;
+  background-image: url("../images/si.png");
+  background-position: 50% 50%;
+  margin: 70px auto 0;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 30px auto 0;
+}
+
+.u-section-1 .u-text-2 {
+  font-size: 1rem;
+  width: 710px;
+  margin: 30px auto 0;
+}
+
+.u-section-1 .u-form-1 {
+  height: 51px;
+  width: 710px;
+  margin: 37px auto 60px;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: none;
+  border-style: none;
+}
+
+.u-section-1 .u-text-3 {
+  width: auto;
+  font-size: 1rem;
+  text-align: center;
+  margin: 12px auto 60px;
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-text-2 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 540px;
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-text-1 {
+    font-size: 2.25rem;
+  }
+
+  .u-section-1 .u-text-2 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 340px;
+    margin-bottom: 0;
+  }
+}

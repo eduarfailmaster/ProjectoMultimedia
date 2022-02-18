@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Docs styles -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CDNSFree2/Plyr/plyr.css" />
+<body>
+<div id="container">
+    <video id="videoclip" controls data-poster="" class="vid1">
+        <source id="mp4video" src=<%= data.url %> >
+    </video>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.7/plyr.min.js"></script>
+<script>
+    var controls =
+        [
+            'play-large', // The large play button in the center
+            'restart', // Restart playback
+            'rewind', // Rewind by the seek time (default 10 seconds)
+            'play', // Play/pause playback
+            'fast-forward', // Fast forward by the seek time (default 10 seconds)
+            'progress', // The progress bar and scrubber for playback and buffering
+            'current-time', // The current time of playback
+            'duration', // The full duration of the media
+            'mute', // Toggle mute
+            'volume', // Volume control
+            'settings', // Settings menu
+            'pip', // Picture-in-picture (currently Safari only)
+            'airplay', // Airplay (currently Safari only)
+            'download', // Show a download button with a link to either the current source or a custom URL you specify in your options
+            'fullscreen' // Toggle fullscreen
+        ];
+
+    const player = new Plyr('.vid1',{controls});
+</script>
+
+<style>
+    :root {
+        --plyr-color-main: #e657ff;
+        --plyr-video-control-color  :#e8ffba;
+    }
+</style>
+</body>
+</html>
